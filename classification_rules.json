@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "description": "Classification matrix for automated sorting based on extensions, filename patterns, and content tags.",
+  "categories": {
+    "media": {
+      "screenshots": {
+        "extensions": ["png", "jpg", "jpeg", "webp"],
+        "name_patterns": ["(?i)screenshot", "(?i)screen_shot", "(?i)bildschirmfoto", "(?i)capture", "(?i)snip", "^shot[_-]?[0-9]+"],
+        "target_directory": "Media/Screenshots"
+      },
+      "screen_recordings": {
+        "extensions": ["mp4", "mkv", "webm", "mov", "avi"],
+        "name_patterns": ["(?i)screen[-_]?recording", "(?i)bildschirmaufnahme", "(?i)obs", "(?i)rec[_-]?[0-9]{4}", "(?i)capture"],
+        "target_directory": "Media/Screen_Recordings"
+      },
+      "photos": {
+        "extensions": ["jpg", "jpeg", "heic", "dng", "raw", "cr2", "nef"],
+        "name_patterns": ["^img[_-]?[0-9]+", "^dsc[_-]?[0-9]+", "^photo[_-]?[0-9]+", "(?i)foto"],
+        "target_directory": "Media/Photos"
+      },
+      "audio_recordings": {
+        "extensions": ["m4a", "wav", "mp3", "aac", "flac", "ogg"],
+        "name_patterns": ["(?i)sprache", "(?i)voice", "(?i)memo", "(?i)aufnahme", "(?i)audio"],
+        "target_directory": "Media/Audio_Notes"
+      }
+    },
+    "school_subjects": {
+      "mathematics": {
+        "extensions": ["pdf", "docx", "pptx", "png", "jpg", "nb", "tex"],
+        "name_patterns": ["(?i)mathe", "(?i)math", "(?i)analysis", "(?i)geometrie", "(?i)algebra", "(?i)vektor", "(?i)differential", "(?i)integral", "(?i)stochastik", "(?i)kurvendiskussion"],
+        "target_directory": "Education/Mathematics"
+      },
+      "german": {
+        "extensions": ["pdf", "docx", "txt", "odt", "epub"],
+        "name_patterns": ["(?i)deutsch", "(?i)aufsatz", "(?i)textanalyse", "(?i)eroerterung", "(?i)erörterung", "(?i)inhaltsangabe", "(?i)grammatik", "(?i)literatur", "(?i)gedicht"],
+        "target_directory": "Education/German"
+      },
+      "english": {
+        "extensions": ["pdf", "docx", "txt", "pptx"],
+        "name_patterns": ["(?i)english", "(?i)essay", "(?i)summary", "(?i)vocab", "(?i)reading_comprehension", "(?i)listening", "(?i)grammar"],
+        "target_directory": "Education/English"
+      },
+      "informatics_and_engineering": {
+        "extensions": ["py", "ts", "js", "rs", "cpp", "c", "java", "json", "md", "sql", "sldprt", "sldasm", "step", "stp"],
+        "name_patterns": ["(?i)htl", "(?i)informatik", "(?i)prog", "(?i)netzwerk", "(?i)pos", "(?i)dbt", "(?i)cad", "(?i)solidworks", "(?i)forensic", "(?i)c2pa"],
+        "target_directory": "Education/Engineering_IT"
+      },
+      "natural_sciences": {
+        "extensions": ["pdf", "docx", "xlsx", "pptx"],
+        "name_patterns": ["(?i)physik", "(?i)chemie", "(?i)biologie", "(?i)labor", "(?i)versuchsprotokoll", "(?i)messung"],
+        "target_directory": "Education/Natural_Sciences"
+      }
+    },
+    "technical_assets": {
+      "cad_and_3d": {
+        "extensions": ["sldprt", "sldasm", "slddrw", "step", "stp", "stl", "obj", "3mf", "dwg", "dxf"],
+        "name_patterns": [".*"],
+        "target_directory": "Projects/CAD_3D"
+      },
+      "disk_images_and_firmware": {
+        "extensions": ["iso", "img", "vmdk", "qcow2", "bin", "rom"],
+        "name_patterns": [".*"],
+        "target_directory": "System/Images_VMs"
+      },
+      "archives": {
+        "extensions": ["zip", "tar", "gz", "7z", "rar", "bz2", "xz"],
+        "name_patterns": [".*"],
+        "target_directory": "Archives/Packed"
+      }
+    }
+  },
+  "fallback_rules": {
+    "images": {
+      "extensions": ["png", "jpg", "jpeg", "webp", "gif", "bmp", "svg"],
+      "target_directory": "Unsorted/Images"
+    },
+    "videos": {
+      "extensions": ["mp4", "mkv", "webm", "mov", "avi"],
+      "target_directory": "Unsorted/Videos"
+    },
+    "documents": {
+      "extensions": ["pdf", "docx", "xlsx", "pptx", "txt", "odt", "csv"],
+      "target_directory": "Unsorted/Documents"
+    },
+    "default": {
+      "target_directory": "Unsorted/Other"
+    }
+  }
+}
