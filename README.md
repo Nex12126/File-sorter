@@ -2,7 +2,8 @@
 
 A lightweight, fast, and automated tool designed to clean up cluttered directories (such as Downloads or Desktop) with a single click and organize files based on customizable rules.
 
----
+---<img width="921" height="649" alt="image" src="https://github.com/user-attachments/assets/a048c644-0d99-4725-ab15-fe0e5497de05" />
+
 
 ## ✨ Features
 
